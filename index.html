@@ -14,41 +14,64 @@
 
     <div class="container halign-wrapper" vertical-align: middle>
 
-        <div class="card-panel nimed">
+        <div class="card-panel nimed-card">
 
             <div class="row">
-                <form class="col s12">
+                <form class="col s8">
                   <div class="row">
                     <div class="input-field col s12">
                       <textarea id="textarea" class="materialize-textarea"></textarea>
-                      <label for="textarea">Textarea</label>
+                      <label for="textarea">Sisesta nimed eraldi ridadele</label>
                     </div>
                   </div>
                 </form>
+
+                <!-- <form class="col s4">
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <textarea id="textarea2" class="materialize-textarea"></textarea>
+                        <label for="textarea2">Mitme punkti peale mäng käib</label>
+                      </div>
+                    </div>
+                  </form> -->
+
+
+                 
+                <div class="input-field col s4">
+                    <input id="punktid" type="number">
+                    <label class="active" for="punktid">Mitme punkti peale mäng käib</label>
+                </div>
+           
+
+
             </div>
-            <button id="nimed-btn" class="btn waves-effect waves-light green">Lisa nimed</button>
+            <button id="nimed-btn" class="btn waves-effect waves-light green">Alusta mängu</button>
 
 
             
         </div>
 
-        <div class="card-panel nupud">
-            <button id="nupp" class="btn waves-effect waves-light red">Vali võitja</button></td>
-            <button class="btn waves-effect waves-light green" id="mangiuuesti" >Mängi uuesti</button>
+        <div class="card-panel nupud-card">
+            <button id="vali-voitja-btn" class="btn waves-effect waves-light red">Vali võitja</button></td>
         </div>
 
-        <div class="card-panel vooru-voitja">
-            <div id="voitja"></div>
+        <div class="card-panel vooru-voitja-card">
+            <div id="vooru-voitja-id"></div>
         </div>
         <ul id="ul" class="collection skoor"></ul>
 
-        <div class="card-panel mangu-voitja">
+        <div class="card-panel mangu-voitja-card">
             <div id="mangu-voitja-id"></div>
+        </div>
+
+        <div class="card-panel uuesti-card">
+            <button class="btn waves-effect waves-light green" id="mangi-uuesti-btn" >Mängi uuesti</button>
+            <button class="btn waves-effect waves-light purple" id="uued-mangijad-btn" >Sisesta uued mängijad</button>
         </div>
 
     </div>
 
-    <div id="uuesti"></div>
+
     
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>

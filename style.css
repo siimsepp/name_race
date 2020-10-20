@@ -1,23 +1,35 @@
-.nupud {
-    visibility: hidden;
+.nupud-card {
+    display: none;
 }
 
-.nimed {
-    display: block;
+.nimed-card {
+    display: none;
 }
 
-.vooru-voitja {
-    visibility: hidden;
+.vooru-voitja-card {
+    display: none;
+}
+
+.mangu-voitja-card {
+    display: none;
+}
+
+.uuesti-card {
+    display: none;
 }
 
 .skoor {
     visibility: hidden;
 }
 
-.mangu-voitja {
+/* #mangi-uuesti-btn {
     visibility: hidden;
 }
 
-#mangiuuesti {
+#uued-mangijad-btn {
     visibility: hidden;
+} */
+
+ul:empty {
+    display: none;
 }
