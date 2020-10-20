@@ -1,0 +1,23 @@
+.nupud {
+    visibility: hidden;
+}
+
+.nimed {
+    display: block;
+}
+
+.vooru-voitja {
+    visibility: hidden;
+}
+
+.skoor {
+    visibility: hidden;
+}
+
+.mangu-voitja {
+    visibility: hidden;
+}
+
+#mangiuuesti {
+    visibility: hidden;
+}
