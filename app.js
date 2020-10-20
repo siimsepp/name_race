@@ -22,6 +22,8 @@ const uuedMangijadBtn = document.querySelector('#uued-mangijad-btn');
 
 
 const sisestaNimed = () => {
+    textarea.value = '';
+    inputPunktid.value = '';
     uuestiCard.style.display = 'none';
     nimedCard.style.display = 'block';
     input.addEventListener('click', e => {
@@ -44,8 +46,6 @@ const alustaMangu = (nimedArr, punktid) => {
     let summad = new Array(nimedArr.length+1).join('0').split('').map(parseFloat);
     valiVoitjaBtn.addEventListener('click', () => {
 
-        
-        
         vooruVoitjaCard.style.display = 'block';
         skoor.style.visibility = 'visible';
 
@@ -56,7 +56,6 @@ const alustaMangu = (nimedArr, punktid) => {
             summad[randNum]++;
 
             vooruVoitjaId.innerHTML = `<h3>${voitja}</h3>`;
-
 
             html = '';
             nimedArr.map((nimi, index) => {
