@@ -92,30 +92,10 @@ const alustaMangu = (nimedArr, punktid) => {
 
 }
 
-// console.log(inputPunktid.value);
-// console.log(typeof inputPunktid.value);
-
-
-// const parsed = parseInt(x, base);
-//   if (isNaN(parsed)) { return 0; }
-
-// const punktid = parseInt(inputPunktid.value);
-// console.log(punktid);
-
-
-// console.log(typeof);
-// const punktid = Number(inputPunktid.value) ? Number(inputPunktid.value) : 10;
-// console.log(typeof punktid);
-// console.log(inputPunktid.value);
-// console.log(parseFloat(inputPunktid.value));
-// console.log(Number.isFinite(parseInt(inputPunktid.value));
-// console.log(punktid);
-// console.log('Points: ' + punktid);
-
 
 let nimedArr = localStorage.getItem('nimedArr') ? JSON.parse(localStorage.getItem("nimedArr")) : [];
 let punktid = localStorage.getItem('manguPunktid') ? JSON.parse(localStorage.getItem("manguPunktid")) : 10;
-// console.log(punktid);
+
 if (nimedArr.length === 0) {
     sisestaNimed();
 } else {

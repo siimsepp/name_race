@@ -22,14 +22,6 @@
     visibility: hidden;
 }
 
-/* #mangi-uuesti-btn {
-    visibility: hidden;
-}
-
-#uued-mangijad-btn {
-    visibility: hidden;
-} */
-
 ul:empty {
     display: none;
 }
