@@ -95,8 +95,4 @@ const alustaMangu = (nimedArr, punktid) => {
 let nimedArr = localStorage.getItem('nimedArr') ? JSON.parse(localStorage.getItem("nimedArr")) : [];
 let punktid = localStorage.getItem('manguPunktid') ? JSON.parse(localStorage.getItem("manguPunktid")) : 10;
 
-if (nimedArr.length === 0) {
-    sisestaNimed();
-} else {
-    alustaMangu(nimedArr, punktid); 
-}
+nimedArr.length === 0 ? sisestaNimed() : alustaMangu(nimedArr, punktid);
